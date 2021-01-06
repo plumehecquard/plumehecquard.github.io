@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+   <title>Espace créatif Floresta</title>
+     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link href="styleCopyNew.css"rel="stylesheet"type="text/css">
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+</head>
+
+
+<body>
+
+<section id="drag">
+<div class="col">
+<div class="colGauche">
+<img id="drag1" src="Links/Bolsonaro.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag1" src="Links/raoni.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag2" src="Links/sonia.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag3" src="Links/paulo.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag3" src="Links/awa.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag3" src="Links/awa2.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+<img id="drag3" src="Links/awa3.png" draggable="true" ondragstart="drag(event)" width="200px" height="auto">
+
+</div>
+
+
+<div class="colMilieu">
+<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<div class="colDroite">
+  <nav>
+    <div class="conteneur-flexbox">
+    <div class="box">
+    <p class="survol"> Espace info </p>
+    <a href="index.html"><img src="Links/espaceCreatifSmall.jpg" alt="couverture"></a>
+    </div>
+    </div>
+  </nav>
+  <div class="texte"><p> créer ton affiche pour lutter pour les droits des peuples autochtones et la sauvegarde de la forêt Amazonienne en utilisant cet espace de création de textes et les illustrations. <Br> Tu peux écrire ici avec:</p>
+  <div class="texte1"><p contenteditable="true"> Millimètre light </p>
+  <div class="texte2"><p contenteditable="true"> Millimètre Bold </p>
+  <div class="texte3"><p contenteditable="true"> Faune regular </p>	
+  <div class="texte4"><p contenteditable="true"> Faune thin </p>	
+  <div class="texte5"><p contenteditable="true"> Faune Bold </p>
+</div>
+</div>
+</section>
+
+</body>
+</html>

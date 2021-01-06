@@ -1,0 +1,881 @@
+/*
+  version modifiée le 3 avril 2020 @Didier
+  Toutes les dimensions et valeurs sont en % ou en vw (unité relative à la taille standard) pour la typo
+*/
+
+@font-face {
+    font-family: 'Faune-Text_Regular';
+    src:    url('Fonts/Faune/Regular/Faune-Text_Regular.eot');
+    src:    url('Fonts/Faune/Regular/Faune-Text_Regular.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.woff') format('woff'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.woff2') format('woff2'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.ttf') format('truetype'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Black';
+    src:    url('Fonts/Faune/Black/Faune-Display_Black.eot');
+    src:    url('Fonts/Faune/Black/Faune-Display_Black.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Black/Faune-Display_Black.woff') format('woff'),
+            url('Fonts/Faune/Black/Faune-Display_Black.woff2') format('woff2'),
+            url('Fonts/Faune/Black/Faune-Display_Black.ttf') format('truetype'),
+            url('Fonts/Faune/Black/Faune-Display_Black.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Text_Bold';
+    src:    url('Fonts/Faune/Bold/Faune-Text_Bold.eot');
+    src:    url('Fonts/Faune/Bold/Faune-Text_Bold.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.woff') format('woff'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.woff2') format('woff2'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.ttf') format('truetype'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Bold_Italic';
+    src:    url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.eot');
+    src:    url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.woff') format('woff'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.woff2') format('woff2'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.ttf') format('truetype'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Text_Italic';
+    src:    url('Fonts/Faune/Italic/Faune-Text_Italic.eot');
+    src:    url('Fonts/Faune/Italic/Faune-Text_Italic.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.woff') format('woff'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.woff2') format('woff2'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.ttf') format('truetype'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Thin';
+    src:    url('Fonts/Faune/Thin/Faune-Display_Thin.eot');
+    src:    url('Fonts/Faune/Thin/Faune-Display_Thin.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.woff') format('woff'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.woff2') format('woff2'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.ttf') format('truetype'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.svg#svgFontName') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Millimetre-Bold_web';
+    src:    url('Fonts/millimetre/Bold/Millimetre-Bold_web.eot');
+    src:    url('Fonts/millimetre/Bold/Millimetre-Bold_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web.woff') format('woff'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web') format('truetype');
+}
+
+@font-face {
+    font-family: 'Millimetre-Regular_web';
+    src:    url('Fonts/millimetre/Regular/Millimetre-Regular_web.eot');
+    src:    url('Fonts/millimetre/Regular/Millimetre-Regular_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web.woff') format('woff'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Millimetre-Light_web';
+    src:    url('Fonts/millimetre/Light/Millimetre-Light_web.eot');
+    src:    url('Fonts/millimetre/Light/Millimetre-Light_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web.woff') format('woff'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web') format('truetype');
+}
+
+/* règles générales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: grab;
+  font-size: 100%;
+  width: 95%;
+  color: rgb(0,0,0);
+  background: rgb(255,255,255) url('Links/couv3Transp.jpg') no-repeat center;
+  background-size: contain; /* adapter l'image au contenu */
+  background-position-y: 50px;
+}
+
+/* pour revenir au flux normal */
+  .clear {
+    clear: both;
+  }
+/* saut de colonne - compatibilté Firefox */
+  .breack {
+    break-inside: avoid;
+  }
+
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted orange ;
+}
+
+  .tooltip .tooltiptext{
+  font-family: 'Millimetre-Light_web';
+  visibility: hidden;
+  font-size: 0.8vw;
+  width: 80%;
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255);
+  text-align: center;
+  border-radius:0.42vw;
+  padding: 5%;
+  line-height: 130%;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50px;
+  margin-left: -30px;
+  }
+
+  .tooltip:hover .tooltiptext{
+    visibility: visible;
+  }
+
+  /* centrer la page dans le navigateur, contient l'ensemble du site */
+  #page {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/*en-tête de page*/
+
+  /* carré noir de navigation */
+  nav {
+      position: fixed;
+      top: 2%;
+      left: 96%;
+  }
+
+  nav .box .img:hover{
+    cursor: pointer;
+  }
+
+  nav .box .survol{
+    font-family: 'Faune-Text_Regular';
+    font-size: 0.8vw;
+    text-align: left;
+    opacity: 0;
+    width: 50%;
+  }
+
+    .box:hover .survol {
+    opacity: 1; /*le texte passe à opacity 1 et devient visible*/
+    transition: opacity 0.9s;
+  }
+
+  #entete {
+    width: 74%;
+    margin: 0 auto;
+    top: 20%;
+
+  }
+
+  #titre {
+    position: relative;
+    margin: 15% auto;
+    font-size: 100%;
+    padding: 1px;
+  }
+
+  #titre_h1 {
+    position: absolute;
+    right: 0%;
+  }
+
+  #publication {
+    position: relative;
+    width: 38.6%;
+    left: 54.69%;
+  }
+
+  /* règles communes à h1 et h2 */
+  h1, h2 {
+    font-family: 'Millimetre-Light_web';
+    color: rgb(0,0,0);
+    margin: 0;
+  }
+  h1{
+    font-size: 14vw;
+  }
+
+  h2 {
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  #titre p {
+    text-align: right;
+    margin: 0;
+    font-family: 'Faune-Text_Bold';
+    font-size: 0.84vw;
+  }
+
+  #titre .explication{
+        font-family: 'Millimetre-Regular_web';
+    font-size: 1.26vw;
+    padding-top: 3%;
+  }
+
+  /* cible la <div id="citation"> contenue dans la <div id="titre"> */
+  #titre #citation {
+    margin-top: 27%;
+  }
+
+  #titre .citation_titre {
+    font-family: 'Faune-Text_Bold';
+    font-size: 1.4vw;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  #titre .ref_titre{
+    font-family: 'Faune-Text_Regular';
+    font-size: 1.05vw;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+/* --------------- PAGE1 --------------- */
+
+  #page1 {
+    margin-left: 7%;
+  }
+
+  /* affichage sur deux colonnes */
+  #page1 .col {
+    column-count: 2;
+    column-gap: 5%; /* espace entre les colonnes */
+  }
+
+  #page1 .titre {
+    font-family: 'Faune-Display_Thin';
+    font-size: 3.5vw;
+    text-align: left;
+    margin-top:13%;
+    margin-left: 5%;
+    line-height: 4vw;
+  }
+
+  #page1 .titreBold{
+    font-family: 'Millimetre-Light_web';
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 21%;
+  }
+
+  #page1 .colGauche {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    padding-top: 5%;
+    width: 119%;
+    line-height: 140%;
+    /*break-after: column;*/
+  }
+
+  /* permet de ne cibler que le paragraphe de la page1 */
+  #page1 .colGauche p {
+    position: relative;
+    display: inline-block;
+    width: 95%;
+    padding-top: 4%;
+    /*break-inside: avoid; *//* pour Firefox */
+  }
+
+  #page1 .colDroite {
+    padding-left: 15%;
+    padding-top: 25%; /* compatibilité avec Firefox */
+  }
+
+  #page1 .colDroite .chiffres {
+    margin-left: 76%;
+    padding-top: 14%;
+  }
+
+  #page1 .colDroite .image {
+    float: left;
+    padding-left: 17%;
+  }
+
+  #page1 .colDroite {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    width: 64%;
+    text-align: center;
+  }
+
+  #page1 .colDroite .identite {
+    padding-top: 2%;
+  }
+
+  #page1 .colDroite .bold {
+    font-family: 'Millimetre-Bold_web';
+    text-align: center;
+  }
+
+   .information{
+    font-family: 'Faune-Text_Bold';
+    font-size: 1.4vw;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 55%;
+  }
+
+  /* --------------- PAGE2 --------------- */
+
+  #page2 {
+    padding: 0.1%; /* pour replacer le paragraphe */
+    margin-left: 7%;
+    color: rgb(0,0,0);
+    background: rgb(255,255,255) url('Links/foret1transparente.jpg') no-repeat center;
+    background-size: contain;
+    background-position-y: 8%;
+    min-height: 50vw;
+  }
+
+
+  .paragraphe2{
+    float: right;
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 40%;
+    margin-top: 3%;
+    line-height: 140%;
+  }
+
+  .citation{ 
+    font-size: 1.4vw;
+    text-align: left;
+    width: 50%;
+    margin-top: 12%; 
+  }
+
+  .citation p{ 
+    font-family: 'Faune-Text_Bold'; 
+  }
+
+  .citation .bold{
+    font-family: 'Millimetre-Bold_web';
+    font-size: 1.05vw;
+    margin-top: 2%;
+    text-align: right;
+  }
+
+  .citation .light{
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.05vw;
+  }
+
+  #longtext .col {
+    column-count: 2;
+    column-gap: 5%; /* espace entre les colonnes */
+  }
+
+  #longtext .colGauche {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    padding-top: 8%;
+    width: 100%;
+    text-align: left;
+    line-height: 140%;
+    /*break-after: column;*/
+  }
+
+
+  #longtext .colDroite {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    padding-top: 8%;
+    width: 100%;
+    text-align: left;
+    padding-top: 10%; /* compatibilité avec Firefox */
+    line-height: 140%;
+  }
+
+/* --------------- PAGE3 --------------- */
+
+  #page3 h1.titre {
+    font-family: 'Faune-Display_Thin';
+    font-size: 3.5vw;
+    text-align: left;
+    margin-top:5%;
+    margin-left: 5%;
+    line-height: 4vw;
+  }
+
+  #page3  .titreBold{
+    font-family: 'Millimetre-Light_web';
+    font-size: 3.5vw;
+    margin-left: 21%;
+  }
+
+  #page3 .citation2{
+  font-family: 'Faune-Text_Bold';
+  font-size: 1.4vw;
+  text-align: left;
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 20%;
+  }
+
+  #page3 .citation2 .revue{
+  font-family: 'Millimetre-Light_web';
+  font-size: 1.05vw;
+  text-align: right;
+  }
+
+
+ #instagram .col {
+    margin-top: 3%;
+    column-count: 3;
+    column-gap: 5%; /* espace entre les colonnes */
+  }
+
+
+  #instagram .colGauche {
+    width: 25%;
+    padding-top: 4%;
+    break-after: column;
+  }
+
+
+  #instagram .colGauche .chiffres {
+    margin-left: 40%;
+    padding-top: 14%;
+    text-align: center;
+  }
+
+  #instagram .colGauche .image {
+    float: left;
+    padding-left: 17%;
+  }
+
+  #instagram .colGauche {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    width:100%;
+    text-align: center;
+  }
+
+  #instagram .colGauche .identite {
+    padding-top: 2%;
+  }
+
+  #instagram .colGauche .bold {
+    font-family: 'Millimetre-Bold_web';
+    text-align: center;
+    break-inside: avoid;
+  }
+
+
+  #instagram .colMilieu {
+  width: 25%;
+  padding-top: 4%;
+  break-after: column;
+  }
+
+  #instagram .colMilieu .chiffres {
+    margin-left: 40%;
+    padding-top: 14%;
+    text-align: center;
+  }
+
+  #instagram .colMilieu .image {
+    float: left;
+    padding-left: 17%;
+  }
+
+  #instagram .colMilieu {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  #instagram .colMilieu .identite {
+    padding-top: 2%;
+  }
+
+  #instagram .colMilieu .bold {
+    font-family: 'Millimetre-Bold_web';
+    text-align: center;
+  }
+
+
+  #instagram .colDroite {
+    width: 25%;
+    padding-top: 4%;
+    break-after: column;
+  }
+
+    #instagram .colDroite .chiffres {
+    margin-left: 40%;
+    padding-top: 14%;
+    text-align: center;
+  }
+
+  #instagram .colDroite .image {
+  float: left;
+  padding-left: 17%;
+  }
+
+    #instagram .colDroite{
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  #instagram .colDroite .identite {
+    padding-top: 2%;
+  }
+
+  #instagram .colDroite .bold {
+    font-family: 'Millimetre-Bold_web';
+    text-align: center;
+  }
+
+   /* --------------- PAGE4 --------------- */
+#page4{
+      color: rgb(0,0,0);
+    background: rgb(255,255,255) url('Links/foret2Transp.jpg') no-repeat center;
+    background-size: contain;
+    background-position-y: 100%;
+    min-height: 50vw;
+    margin:7%;
+}
+
+   #personnalités .col{
+    column-count: 2;
+    column-gap: 5%; /* espace entre les colonnes */
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    width: 100%;
+    text-align: left;
+    break-after: column;
+    line-height: 140%;
+   }
+
+   #personnalités .nom {
+  font-family: 'Millimetre-Bold_web';
+  font-size: 1.26vw;
+  margin-top: 0%;
+  text-align: left;
+  }
+
+     #personnalités .nom2 {
+  font-family: 'Millimetre-Bold_web';
+  font-size: 1.26vw;
+  margin-top: 5%;
+  text-align: left;
+  }
+
+     #personnalités .colDroite .nom {
+  font-family: 'Millimetre-Bold_web';
+  font-size: 1.26vw;
+  margin-top: 0%;
+  text-align: left;
+  }
+
+  .information2{
+  font-family: 'Faune-Text_Bold';
+  font-size: 1.4vw;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -36%;
+  margin-left: 5%
+  }
+
+  #text .col {
+    column-count: 2;
+    column-gap: 5%;
+    margin-left: 7%;
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    padding-top: 1%;
+    text-align: left;
+    break-after: column; 
+    line-height: 140%;
+  }
+
+   /* --------------- PAGE5 --------------- */
+
+  #page5{
+    margin-top: 7%;
+    margin-left: 5%;
+  }
+
+
+#sprite1 {
+  background: url('Links/filmer.png') no-repeat 0 0;
+  width: 1247px;
+  height: 592px;
+  background-size: cover;
+
+}
+
+#sprite1:hover {
+  background-position-y: -592px;
+  cursor: pointer;
+}
+
+
+#page5 .texte{
+  font-family: 'Faune-Text_Bold';
+  float: center;
+  font-size: 1.4vw;
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+  }
+
+#page5 .nom{  
+  font-family: 'Millimetre-Bold_web';
+  font-size: 1.05vw;
+  margin-top: 2%;
+  text-align: right;
+  margin-right: 20%;
+}
+
+ /* --------------- PAGE6 --------------- */
+
+#page6 .titre {
+    font-family: 'Faune-Display_Thin';
+    font-size: 3.5vw;
+    text-align: left;
+    margin-top:5%;
+    margin-left: 12%;
+    line-height: 4vw;
+  }
+
+  #page6 .titreBold{
+    font-family: 'Millimetre-Light_web';
+    font-size: 3.5vw;
+    text-align: left;
+    margin-left: 21%;
+  }
+
+  #Awas .col {
+    column-count: 2;
+    column-gap: 5%;
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    text-align: left;
+    padding-top: 5%;
+    width: 90%;
+    margin-left: 7%;
+    break-after: column; 
+    line-height: 140%;
+  }
+
+#sprite2 {
+  margin-top: 5%;
+  background: url('Links/filmerSprite.png') no-repeat 0 0;
+  width: 343px;
+  height: 167px;
+  background-size: cover;
+}
+
+#sprite2:hover {
+  background-position-y: -167px;
+  cursor: pointer;
+  break-inside: avoid;
+}
+
+#awadansleau {
+  background: url('Links/filmerSprite2.png') no-repeat 0 0;
+  width: 343px;
+  height: 167px;
+  background-size: cover;
+}
+
+#awadansleau:hover {
+  background-position-y: -167px;
+  cursor: pointer;
+}
+
+  #Awas .colDroite p {
+margin-top: 5%;
+  }
+
+  /* --------------- PAGE7 --------------- */
+
+  #page7{   
+   background: rgb(255,255,255) url('Links/foret5.jpg') no-repeat center;
+   background-size: contain;
+   background-position-y: 100%;
+   min-height: 50vw;
+  }
+
+  #page7 .fin .texte{
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 0%;
+    break-after: column;
+    line-height: 140%;
+  }
+
+    #page7 .fin .citation{
+  font-family: 'Faune-Text_Bold';
+  float: center;
+  font-size: 1.4vw;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 25%;
+  }
+
+    #page7 .fin .nom{
+  font-family: 'Millimetre-Bold_web';
+  font-size: 1.05vw;
+  margin-top: 1%;
+  text-align: center;
+  }
+
+    /* --------------- espace créatif --------------- */
+
+#drag{
+  background-color: rgb(240,240,240);
+}
+ #drag .col {
+    column-count: 3;
+    break-after: column; 
+  }
+
+  #drag .colGauche{
+    padding-top: 5%;
+    width: 70%;
+    height: 45.5vw;
+    border: 1px dotted black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(255,255,255);
+  }
+
+
+#drag .colGauche img{
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+#drag .colMilieu .div1{
+  float:left;
+  width: 120%;
+  height: 45.5vw;
+  margin-top: 2%;
+  background-color: rgb(255,255,255);
+}
+
+#drag .colDroite{
+  padding-top: 10%;
+}
+
+#drag .colDroite .texte {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 70%;
+    margin-left: 20%;
+    break-after: column;
+  }
+
+  #drag .colDroite .texte1 {
+    font-family: 'Millimetre-Light_web';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 120%;
+    margin-top: 7%;
+    break-after: column;
+  }
+
+#drag .colDroite .texte2 {
+    font-family: 'Millimetre-Bold_web';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 120%;
+    margin-top: 7%;
+    break-after: column;
+  }
+
+#drag .colDroite .texte3 {
+    font-family: 'Faune-Text_Regular';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 120%;
+    margin-top: 7%;
+    break-after: column;
+  }
+
+  #drag .colDroite .texte4 {
+    font-family: 'Faune-Display_Thin';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 120%;
+    margin-top: 7%;
+    break-after: column;
+  }
+
+    #drag .colDroite .texte5 {
+    font-family: 'Faune-Text_Bold';
+    font-size: 1.26vw;
+    text-align: left;
+    width: 120%;
+    margin-top: 7%;
+    break-after: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- media queries, pour adapter la dimension des images ------------*/
+
+   .colDroite .image img, .colMilieu .image img, .colGauche .image img {
+    width: 100%;
+  }
+
+  @media (max-width: 1250px) {
+    #page1 .colDroite .image {
+      width: 55%;
+    }
+    #instagram .colDroite .image, #instagram .colMilieu .image, #instagram .colGauche .image {
+      width: 49%;
+    }
+
+  }
+
+    @media (max-width: 1250px) {
+    #drag .colGauche .image {
+      width: 55%;
+    }
+  }
+
+
+ 
+
+

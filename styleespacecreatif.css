@@ -1,0 +1,176 @@
+
+@font-face {
+    font-family: 'Faune-Text_Regular';
+    src:    url('Fonts/Faune/Regular/Faune-Text_Regular.eot');
+    src:    url('Fonts/Faune/Regular/Faune-Text_Regular.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.woff') format('woff'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.woff2') format('woff2'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.ttf') format('truetype'),
+            url('Fonts/Faune/Regular/Faune-Text_Regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Black';
+    src:    url('Fonts/Faune/Black/Faune-Display_Black.eot');
+    src:    url('Fonts/Faune/Black/Faune-Display_Black.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Black/Faune-Display_Black.woff') format('woff'),
+            url('Fonts/Faune/Black/Faune-Display_Black.woff2') format('woff2'),
+            url('Fonts/Faune/Black/Faune-Display_Black.ttf') format('truetype'),
+            url('Fonts/Faune/Black/Faune-Display_Black.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Text_Bold';
+    src:    url('Fonts/Faune/Bold/Faune-Text_Bold.eot');
+    src:    url('Fonts/Faune/Bold/Faune-Text_Bold.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.woff') format('woff'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.woff2') format('woff2'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.ttf') format('truetype'),
+            url('Fonts/Faune/Bold/Faune-Text_Bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Bold_Italic';
+    src:    url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.eot');
+    src:    url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.woff') format('woff'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.woff2') format('woff2'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.ttf') format('truetype'),
+            url('Fonts/Faune/Bold_Italic/Faune-Display_Bold_Italic.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Text_Italic';
+    src:    url('Fonts/Faune/Italic/Faune-Text_Italic.eot');
+    src:    url('Fonts/Faune/Italic/Faune-Text_Italic.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.woff') format('woff'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.woff2') format('woff2'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.ttf') format('truetype'),
+            url('Fonts/Faune/Italic/Faune-Text_Italic.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'Faune-Display_Thin';
+    src:    url('Fonts/Faune/Thin/Faune-Display_Thin.eot');
+    src:    url('Fonts/Faune/Thin/Faune-Display_Thin.eot#iefix') format('embedded-opentype'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.woff') format('woff'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.woff2') format('woff2'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.ttf') format('truetype'),
+            url('Fonts/Faune/Thin/Faune-Display_Thin.svg#svgFontName') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Millimetre-Bold_web';
+    src:    url('Fonts/millimetre/Bold/Millimetre-Bold_web.eot');
+    src:    url('Fonts/millimetre/Bold/Millimetre-Bold_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web.woff') format('woff'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Bold/Millimetre-Bold_web') format('truetype');
+}
+
+@font-face {
+    font-family: 'Millimetre-Regular_web';
+    src:    url('Fonts/millimetre/Regular/Millimetre-Regular_web.eot');
+    src:    url('Fonts/millimetre/Regular/Millimetre-Regular_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web.woff') format('woff'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Regular/Millimetre-Regular_web') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Millimetre-Light_web';
+    src:    url('Fonts/millimetre/Light/Millimetre-Light_web.eot');
+    src:    url('Fonts/millimetre/Light/Millimetre-Light_web') format('embedded-opentype'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web.woff') format('woff'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web.woff2') format('woff2'),
+            url('Fonts/millimetre/Light/Millimetre-Light_web') format('truetype');
+}
+
+
+/* règles générales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: grab;
+  font-size: 100%;
+  width: 95%;
+  color: rgb(0,0,0);
+  background: rgb(240,240,240);
+}
+
+/* pour revenir au flux normal */
+  .clear {
+    clear: both;
+  }
+/* saut de colonne - compatibilté Firefox */
+  .break {
+    break-inside: avoid;
+  }
+
+  /* centrer la page dans le navigateur, contient l'ensemble du site */
+  #drag {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/*en-tête de page*/
+
+  /* carré noir de navigation */
+  nav {
+      position: fixed;
+      top: 2%;
+      left: 96%;
+  }
+
+  nav .box .img:hover{
+    cursor: pointer;
+  }
+
+  nav .box .survol{
+    font-family: 'Faune-Text_Regular';
+    font-size: 0.8vw;
+    text-align: left;
+    opacity: 0;
+    width: 50%;
+  }
+
+    .box:hover .survol {
+    opacity: 1; /*le texte passe à opacity 1 et devient visible*/
+    transition: opacity 0.9s;
+  }
+
+
+  #drag .col {
+    column-count: 3;
+    column-gap: 5%; /* espace entre les colonnes */
+  }
+
+  #drag .colGauche{
+    padding-top: 5%;
+    width: 30%;
+    height: 50%;
+    border: 1px dotted black;
+    overflow: scroll;
+    background-color: blue;
+  }
+
+
+#drag .colGauche #drag1{
+  margin-top: 5%;
+}/* Ici pour les images */
+
+#drag .colMilieu{
+  background:rgb(255,255,255);
+}
+
+#drag .colDroite{
+  background:rgb(255,255,255);
+}
+
+

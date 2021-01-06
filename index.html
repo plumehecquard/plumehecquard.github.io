@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+   <title>Floresta</title>
+    <meta charset="utf-8">
+    <link href="styleCopyNew.css"rel="stylesheet"type="text/css">
+    <!-- lien vers la bibliothèque jQuery en ligne : nécessite une connexion internet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- lien vers le fichier jQuery js/redimSprite.js -->
+    <script src="js/redimSprite.js"></script>
+    <!-- script d'initialisation -->
+    <script src="js/tooltips.jr"></script>
+
+    <script>
+      /**
+       *  Script pour redimensionner les sprites en jQuery
+       *  Le code des focntions se trouve dans le fichier [redimSprite.js] dans le dossier [js]
+       *  -------------- NE PAS MODIFIER CE CODE --------------
+       */
+
+      $(document).ready(function() { // s'assurer que le DOM est chargé avant d'agir sur les éléments du DOM
+
+        init(); // initialiser l'affichage -> redimSprite.js
+
+        /**
+         *  @function resize : détecte le rdimensionnelnt du navigateur et relance le calcul des dimensions des sprites
+         */
+        $(window).resize(function() {
+          init();
+        })
+
+      })
+    </script>
+</head>
+<body>
+  <nav>
+    <div class="conteneur-flexbox">
+    <div class="box">
+    <p class="survol"> Espace créatif</p>
+    <a href="page2.html"><img src="Links/espaceCreatifSmall.jpg" alt="couverture"></a>
+  </div>
+</div>
+  </nav>
+    <div id="page">
+
+      <!-- ------------------ En-tête ---------------- -->
+
+
+
+      <section id="entete">
+        <div id="titre">
+          <div id="titre_h1">
+            <div id="publication">
+              <h2> Publié le 03 novembre 2020 à 09h30 </h2>
+              <p>
+                Temps de Lecture 5 min.<br>
+                écrit et illustré par Plume Hecquard, <br> en soutien à survival Internationnal.
+              </p>
+            </div>
+            <h1> FLORESTA </h1>
+          </div>
+          <div id="citation">
+            <p class="explication"> Floresta (forêt en brésilien) est une interface ayant pour but d'informer et de sensibiliser le lecteur à la cause<br>des peuples d'Amazonie qui luttent différemment contre les gouvernements voulant leur imposer la monoculture. </p>
+            <p class="citation_titre">
+              « L'humanité s'installe dans la monoculture ; elle s'apprête à produire la civilisation en masse, <br>comme la betterave.
+              Son ordinaire ne comportera plus que ce plat. »
+            </p>
+            <p class="ref_titre"> Tristes Tropiques (1955) de Claude Lévi-Strauss </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------ Page 1 ---------------- -->
+
+      <section id="page1">
+        <div class="col">
+
+            <div class="colGauche">
+              <h1 class="titre"> L'Amazonie et <br><span class="titreBold">les « Réactionnaires »</span></h1>
+              <!-- class:break - forcer le changement de colonne après ce paragraphe -->
+              <p class="break">
+                La forêt amazonienne est la plus grande zone de forêt ancienne tropicale <br> de la planète. Véritable trésor de biodiversité, elle compte plus de 24 millions d’habitants dont des centaines de milliers issus des <span class="tooltip" href="#">peuples autochtones.<span class="tooltiptext">premier contact avec les Yanomamis en 1940</span></span> Avec l’arrivée au pouvoir de la force politique ultra-conservatrice <br>et réactionnaire de Bolsonaro, les adversaires des droits des Amérindiens<br> sont aujourd’hui en position de force. De ce fait, ils cherchent à réaliser<br> l’un de leurs objectifs principaux : l’affaiblissement et si possible la réduction des protections données  aux « terres indigènes », qui représentent<br>aujourd’hui 13,76 % du territoire du Brésil. Cependant, depuis la constitution<br>de 1988, les territoires dits « indigènes » sont protégés, comme celui des Yanomamis qui <span class="tooltip" href="#">recouvre environ 96 500 km²<span class="tooltiptext"> 1977 : le régime millitaire brésilien veut construire une route passant dans le territoire des Yanomamis</span></span> de forêt. Cette liste des territoires<br>à délimiter augmente régulièrement avec les ethnies dites « ré-émergentes »<br>qui décident, au vu du nouveau contexte, de revendiquer à nouveau leur indigénéité. Or, de tels mouvements sont vus avec suspicion par les opposants qui n’y voient qu’un stratagème utilisé par les peuples pour s'approprier certains territoires. Cette situation a créé une grande animosité envers les Amérindiens qui devient aujourd’hui critique car elle est cautionnée par<br>les pouvoirs politiques du Brésil. On a pu compter 17 assassinats d’Amérindiens liés à des conflits fonciers en 2017(CIMI). De plus, les territoires indigènes<br>se trouvent au cœur de la forêt Amazonienne qui est de plus en plus surexploitée : <span class="tooltip" href="#">braconnages, feux de forêt&nbsp;etc.<span class="tooltiptext">1980 : les terres des Yanomamis sont envahies par 40000 orpailleurs</span></span>
+              </p>
+            </div>
+
+            <div class="colDroite">
+              <div class="image">
+                <img src="Links/bolsonaro.jpg" alt="bolsonaro">
+              </div>
+              <div class="chiffres">
+                <p class="bold">3712</p>
+                <p>Publications </p>
+                <p class="bold">15,9 m</p>
+                <p>Abonnés </p>
+                <p class="bold">459</p>
+                <p>Abonnements </p>
+              </div>
+              <div class="clear"></div> <!-- permet de revenir au flux normal -->
+              <div class="identite">
+                <p class="bold">Jair M.Bolsonaro</p>
+                <p>Personnalité publique <br>
+                Président de la République Fédérale du Brésil</p>
+                <p class="bold">Brasilia, Brazil </p>
+              </div>
+              <div class="information">
+                <p>17 assassinats d’Amérindiens liés <br> à des conflits fonciers en 2017 (CIMI) 
+                </p>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- ------------------ Page 2 ---------------- -->
+
+      <section id="page2">
+
+       
+       <div  class="paragraphe2">
+          <p>
+             Durant les quarante dernières années, 800 000 km² (l’équivalent d’une fois et demie la France) de forêt amazonienne ont été détruits. En 2009, Greenpeace avait publié une étude démontrant que l‘élevage bovin était responsable de 80 % de la déforestation amazonienne,<br>ce qui représentait 14 % de la déforestation annuelle<br>de la planète. C’est pour tout cela qu’il est devenu<br>plus que nécessaire pour <span class="tooltip" href="#">les habitants de cette fôret<span class="tooltiptext">1980 : l'invasion cause la mort de 15% de la population des Yanomamis</span></span> <br>de sortir de l’ombre pour <span class="tooltip" href="#"> défendre leur terre. <span class="tooltiptext">décimée par le paludisme et d'autres maladies infectieuses</span>
+           </span>
+          </p>
+        </div>
+        
+       <div class="citation"> 
+        <p> « Nous, Gardiens, défendons les droits de notre peuple et défendons
+        la nature pour nous tous. Trois de nos Gardiens ont été assassinés. Il faut que la terre soit protégée pour de bon. »
+        </p>
+        <p class="bold"> Olimpio Guajajara,<br><span class="light">coordinateur des Gardiens de l’Amazonie</span></p>
+      </div>
+
+      <div class="clear"></div>
+
+
+      <section id="longtext">
+        <div class="col">
+          <div class="colGauche"> 
+              <p class="break"> Il est naît alors <span class="tooltip" href="#">une catégorie de « Chefs autochtones »<span class="tooltiptext">En 2010, Davi Kopenawa et Bruce Albert publient La Chute du Ciel : Paroles d’un chaman Yanomami, un témoignage exceptionel de Davi Kopenawa, chaman et porte-parome des Indiens Yanomamis</span></span>, qui sont<br>des personnalités ayant décidées de sortir des forêts pour défendre les droits de leur peuple. Au fur et à mesure, leurs voix se sont<br>faites entendre à l’international et ils ont pu avoir leur place au sein d'organismes locaux. En 1990, née une convention de la nature<br>qui décide d'obliger les états à prendre en compte une catégorie d’acteurs dont les pratiques « traditionnelles » sont présentées comme essentielles pour la conservation de la biodiversité : <br>les « communautés locales et autochtones ». Les peuples <br>autochtones amérindiens ont alors su saisir les opportunités<br>offertes par ces nouveaux enjeux. Les Chefs sont alors présents
+              <br>dans de nombreuses négociations et veillent à faire avancer<br>leurs revendications politiques, identitaires et territoriales à travers <span class="tooltip" href="#">la reconnaissance de leurs droits <span class="tooltiptext">1978 création de la Commission <br>Pro-Yanomami (CCPY) : ONG pour la défense des territoires Yanomamis</span></span> sur les ressources biologiques<br>et de leurs savoir-faire « traditionnels ».</p>
+          </div>
+          <div class="colDroite">
+              <p> Le concept de peuple autochtone s’est alors profondément transformé. Il sert désormais davantage à promouvoir ces populations en tant que détenteurs de savoir-faire ayant démontré leur pertinence en matière de gestion durable des ressources naturelles et de protection de la biodiversité. Ce nouveau positionnement<br>de la catégorie « peuples autochtones » commence à avoir des effets sur l’équilibre relatif entre les États et leurs minorités ethniques<br>face par exemple aux entreprises ou aux lobbies intéressés par l’exploitation des ressources biologiques issues de la nature<br>ou par l’utilisation des savoir-faire locaux. Malgré cela, les peuples autochtones sont toujours en lutte permanente pour la sauvegarde de leur territoire Amazonien. Mais leur notoriété leur permet d'avoir<br><span class="tooltip" href="#">un soutien plus fort<span class="tooltiptext">leur territoire est reconnu par décret présidentiel en 1992.</span></span> internationalement et donc, de pouvoir continuer à se battre contre les politiques évangéliques et réactionnaires.</p>
+          </div>  
+        </div>
+      </section>
+    </section>
+
+      <!-- ------------------ Page 3 ---------------- -->
+
+<section id="page3">
+
+  <h1 class="titre"> Gardiens de la forêt, <br><span class="titreBold">politique autochtone</span></h1>
+  <div class="citation2"> 
+    <p>« Les populations indiennes ou indigènes sont entrées dans une phase d’organisation<br>socio-politique particulièrement dynamique dès les années 1980, tandis que se multipliaient les conflits liés à la terre, tout d’abord autour de la délimitation légale de territoires,<br> puis autour de l’exploitation des ressources naturelles non renouvelables, comme le pétrole et le gaz naturel. »
+    </p>
+     <p class="revue">Revue Outre-Terre (2019)</p>
+  </div>
+  <section id="instagram">
+    <div class="col">
+      <div class="colGauche">
+        <div class="image">
+          <img src="Links/sonia.jpg" alt="SoniaGuajajara">
+        </div>
+        <div class="chiffres">
+          <p class="bold">3251</p>
+          <p>Publications </p>
+          <p class="bold">231 K</p>
+          <p>Abonnés </p>
+          <p class="bold">1245</p>
+          <p>Abonnements </p>
+        </div>
+        <div class="clear"></div> <!-- permet de revenir au flux normal -->
+        <div class="identite">
+          <p class="bold">Sonia Guajajara</p>
+          <p>Personnalité publique <br>
+           soutenir les peuples indigène</p>
+          <p class="bold">Brasilia, Brazil </p>
+        </div>
+      </div>
+
+      <div class="colMilieu">
+        <div class="image">
+          <img src="Links/paulo.jpg" alt="PauloGuajajara">
+        </div>
+        <div class="chiffres">
+          <p class="bold">+&nbsp;de&nbsp;100</p>
+          <p>Publications </p>
+        </div>
+        <div class="clear"></div> <!-- permet de revenir au flux normal -->
+        <div class="identite">
+          <p class="bold">#paulopaulinoguajajara
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </p>
+        </div>
+      </div>
+
+       <div class="colDroite">
+       <div class="image">
+              <img src="Links/raoni.jpg" alt="Raoni">
+            </div>
+            <div class="chiffres">
+              <p class="bold">48</p>
+              <p>Publications </p>
+              <p class="bold">3869</p>
+              <p>Abonnés </p>
+              <p class="bold">171</p>
+              <p>Abonnements </p>
+            </div>
+            <div class="clear"></div> <!-- permet de revenir au flux normal -->
+            <div class="identite">
+              <p class="bold">Instituto Raoni-IR</p>
+              <p>Organisation non gouvernementale (ONG)</p>
+              <p class="bold">Organisation Indigène Tapayuna </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+    <!-- ------------------ Page 4 ---------------- -->
+
+<section id="page4">
+  <section id="personnalités">
+<div class="col">
+  <div class="colGauche">
+     <div class="nom">
+<p> Sônia Guajajara, </p>
+    </div>
+    <p> est l'une des porte-paroles du mouvement indigène au Brésil.<br>Elle a notamment dénoncé les violations des droits<br>des populations indigènes dans le cadre de grands projets<br>de barrages hydroélectriques en Amazonie, comme celui<br>de Belo Monte.  </p>
+  </div>
+    <div class="nom2">
+      <p> Le militant indigène Paulo Paulino, </p>
+    </div>
+    <p> membre de la tribu des Guajajara et leader du groupe <br> de défense de l’Amazonie « Les gardiens de la forêt »,
+        <br> a été tué lors d’une altercation avec des trafiquants<br>  de bois le vendredi 1er novembre 2019, dans la région <br> de Arariboia, dans l’Etat du Maranhao.
+    </p>
+  <div class="colDroite"></div>
+  <div class="nom">
+    <p> Raoni Metuktire, </p>
+  </div>
+    <p> est l'un des grands chefs du peuple kayapo vivant au cœur<br>de Capoto-Jarina1 (terre indigène protégée sur le territoire<br>du Brésil) et une figure internationale emblématique de la lutte pour la préservation de la forêt amazonienne et de la culture indigène.Il atteint sa notoriété internationale en 1989, en faisant une tournée avec le chanteur Sting dans 17 pays qui lui permet<br>de diffuser son message à l'échelle planétaire. Aujourd'hui encore, il continue de militer à travers le monde pour<br>la sauvegarde de la forêt Amazonienne et se bat contre<br>la politique de Bolsonaro.
+    <br>
+    <br>
+    <br>
+    </p>
+
+</div>
+</div>
+</section>
+
+
+ <p class="information2">  En février 1989 la rencontre de Altamira a rassemblé 3 000 personnes, dont 650 Indiens <br> de quatorze peuples différents, 150 journalistes et de nombreuses associations <br> pour manifester un refus catégorique d’équipement et d’aménagement<br> hydroélectrique du cours du Xingu [ISA, 2015]. </p>
+<section id="text">
+  <div class="col">
+    <div class="colGauche">
+  <p> Le groupe de défense des Gardiens de la forêt a été créé en 2012<br>à l’initiative des Indiens guajajara, las de voir leurs terres rongées par des coupes illégales. Cette milice mène notamment des patrouilles armées dans la réserve d’Arariboia, où vivent quelques 5 300 Indiens répartis sur 4 130 kilomètres carrés. Les membres du groupe transmettent notamment les données GPS de zones où sont retrouvés des troncs découpés et viennent en aide aux pompiers lors d’incendies de forêt. Ils détruisent également les campements illégaux des bûcherons qui exploitent abusivement cette partie de la forêt<br>
+    <br>
+  amazonienne, officiellement placée sous protection du gouvernement brésilien.
+  Parmi leurs autres initiatives, il y a aussi la défence<br>des peuples dits «non-contactés» comme les Awas. En effet,<br>certains autochtones n’ont aucun lien avec notre monde et leur présence sur les terres d’Amazonie n’avait jamais été prouvée<br>jusqu’à récemment. Les Guajajara ont pris l’initiative de les filmer<br>pour révéler leur existence au monde afin de pouvoir créer<br>une lutte pour leur protection avec le soutien de certaines <span class="tooltip" href="#">associations internationnales.<span class="tooltiptext"> 1980-1985 : campagne de vaccination pour protéger les Yanomamis des maladies venant de l'extérieur</span></span></p>
+  </div>
+  </div>
+  </section>
+
+</section>
+
+<!-- ------------------ Page 5 ---------------- -->
+<section id="page5">
+  <div id="sprite1">
+    <div class="texte">
+    <p>« Nous n’avions pas la permission des Awá de filmer mais nous savons qu’il est important d’utiliser ces images car, si nous ne les montrons pas au monde entier, les Awá seront tués par des bûcherons.
+Nous devons montrer que les Awá existent et que leur vie<br>est en danger. Nous utilisons ces images comme <span class="tooltip" href="#">un appel au secours<span class="tooltiptext">En 1993, seize Indiens sont tués dans le village de Haximu (Venezuela).</span></span> et nous appelons<br>le gouvernement à protéger la vie de nos voisins qui ne veulent pas de contact avec<br>des personnes extérieures. »</p>
+   <div class="nom"> <p> Millitant Guajajara</p>
+   </div> 
+  </div>
+</section>
+
+<!-- ------------------ Page 6 ---------------- -->
+<section id="page6">
+   <p class="titre"> La tribu des Awas<br><span class="titreBold">peuple le plus menacé au monde</span></p>
+    <section id="Awas">
+      <div class="col">
+        <div class="colGauche">
+          <p> Les Awá connaissent intimement la forêt. Chaque vallée, chaque cours d’eau, chaque sentier est inscrit dans leur esprit. Ils savent où trouver le meilleur miel, quels arbres de la forêt vont donner<br>les prochains fruits et quand le gibier pourra être chassé. Pour eux, la forêt est la perfection : ils ne peuvent imaginer que l'on puisse<br>la développer ou l’améliorer.
+          Les ressources considérables dont regorge le sous-sol brésilien ont permis un miracle économique.<br>Sept milliards de tonnes de minerais de fer gisent sous la mine<br>de Carajás à 600 km à l’ouest du territoire awá. Il s’agit de la plus grande mine de fer de la planète. Des trains de plus de 2 km,<br>parmi les plus longs du monde, circulent jour et nuit entre la mine<br>et l’océan Atlantique. Sur leur route, ils ne passent qu’à quelques mètres des forêts où vivent encore les Awá isolés. 
+         </p>
+         <div id="sprite2">
+        </div>
+        <div class="colDroite">
+          <div id="awadansleau">
+            </div>
+          <p>Lorsque la voie de chemin de fer de 900 km a été construite<br>dans les années 1980, les autorités ont décidé de contacter<br>et de sédentariser les Awá dont le territoire était coupé par la voie. Le désastre a suivi sous la forme du paludisme et de la grippe : <br>sur les 91 membres d’une communauté, 25 en étaient morts quatre ans plus tard. Aujourd’hui, la voie de chemin de fer amène des étrangers qui <span class="tooltip" href="#">convoitent les terres<span class="tooltiptext">En 2018, Jair Bolsonaro est élu président du Brésil<br>et menace de revenir sur<br>la démarcation du territoire Yanomami.</span></span> et braconnent le gibier sur<br>le territoire de la tribu.
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+          </p>
+        </div>
+      </div>
+    </section>
+</section>
+
+<!-- ------------------ Page 7 ---------------- -->
+<section id="page7">
+  <div class="fin">   
+    <p class="texte"> Les Awá qui vivent sans aucun <br>
+    contact avec le monde extérieur <br>
+    sont l’un des derniers peuples <br>
+    isolés de la planète
+    et la plupart <br> souhaite le rester.
+    </p>
+    <p class="citation">« Si vous détruisez notre forêt, <span class="tooltip" href="#">vous nous détruisez aussi »<span class="tooltiptext">
+      2020, Un indien Yanomami<br>de 15 ans décède du coronavirus. <br>Les Chefs Yanomami soupçonnent que des chercheurs d'or illégaux soient résponsable de l'introduction de ce virus<br>dans leur tribu</span>
+    </span></p>
+  <p class="nom">Takia Awá.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </p>
+  </div>
+</section>
+
+    </section>
+
+
+    </div>
+
+
+  </body>
+</html>
