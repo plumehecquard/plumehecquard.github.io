@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "League Spartan";
+    src:
+    url("leaguespartan-bold-webfont") format("woff"),
+    url("leaguespartan-bold.otf") format("opentype"),
+}
+
+header h1{
+    color:  #9c5da3;
+    font-family: 'Josefin Sans', cursive;
+    text-align: center;
+    font-weight:900;
+    font-style:unset;
+}
+
+header p{
+    color:  #9c5da3;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight:100;
+    font-style:normal;
+}
+
+header .container img {
+    text-align: center;
+    padding: 15px;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+@media screen and (max-width: 640px) {
+    header .container img {
+        text-align: center;
+        padding: 15px;
+        height: auto; 
+        width: auto; 
+        max-width: 150px; 
+        max-height: 150px;
+    }
+}
+
+.navigation {
+    background-color: #e1c0dd;
+    margin-bottom: 20px;
+}
+
+.navigation .nav-item {
+    color: #9c5da3;
+}
+
+.navigation a {
+    color : #9c5da3;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239c5da3' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%239c5da3' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.telecharger {
+    color: #e1c0dd;
+    text-align: center;
+}
+
+a {
+    color: #e1c0dd;
+}
+
+button {
+    border: none;
+    background-color: transparent !important;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color:  #9c5da3;
+}
+
+.font-weight-light {
+    color: white;
+}
+
+.modal-header {
+    font-family: 'Josefin Sans', sans-serif;
+    color:  #9c5da3;
+}
+
+.modal-body p {
+    text-align: left;
+    color:  #9c5da3;
+}
+
+.ligne_projet {
+    margin-top: 20px;
+}
+
+.modal-body {
+    background-color:white;
+}
+
+.modal-header {
+    background-color:white;
+}
+
+
+#mesure{
+    color: #e1c0dd;
+    text-align: right;
+}
+
+#date{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.modal-body p{
+    margin-top: 10px;
+}
+
+footer p {
+    padding-top: 10px;
+    text-align: center;
+    color: #9c5da3;
+     font-family: 'Josefin Sans', sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
