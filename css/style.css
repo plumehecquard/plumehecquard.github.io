@@ -1,24 +1,13 @@
-@font-face {
-    font-family: "League Spartan";
-    src:
-    url("leaguespartan-bold-webfont") format("woff"),
-    url("leaguespartan-bold.otf") format("opentype"),
-}
 
-header h1{
-    color:  #9c5da3;
-    font-family: 'Josefin Sans', cursive;
-    text-align: center;
-    font-weight:900;
-    font-style:unset;
-}
+
+
 
 header p{
     color:  #9c5da3;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Fraunces', serif;
+    font-size: large;
     text-align: center;
-    font-weight:100;
-    font-style:normal;
+    font-weight:800;
 }
 
 header .container img {
@@ -52,8 +41,9 @@ header .container img {
 
 .navigation a {
     color : #9c5da3;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: large;
+    font-family: 'Fraunces', serif;
+    font-weight:800;
+    text-align: center;
 }
 
 .center {
@@ -78,6 +68,7 @@ header .container img {
 }
 
 a {
+    font-weight: 800;
     color: #e1c0dd;
 }
 
@@ -87,7 +78,7 @@ button {
 }
 
 p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Fraunces', serif;
     color:  #9c5da3;
 }
 
@@ -96,7 +87,7 @@ p {
 }
 
 .modal-header {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Fraunces', serif;
     color:  #9c5da3;
 }
 
@@ -117,13 +108,24 @@ p {
     background-color:white;
 }
 
+    h1{
+    color:  #9c5da3;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    font-weight:800;
+    font-style:unset;
+}
+
 
 #mesure{
+    font-weight: 400;
+    font-style: italic;
     color: #e1c0dd;
     text-align: right;
 }
 
 #date{
+    font-weight: 800;
     text-align: center;
     font-size: 30px;
     margin-top: 30px;
@@ -137,7 +139,7 @@ footer p {
     padding-top: 10px;
     text-align: center;
     color: #9c5da3;
-     font-family: 'Josefin Sans', sans-serif;
-    font-weight:normal;
+    font-family: 'Fraunces', serif;
+    font-weight:800;
     font-style:normal;
 }
